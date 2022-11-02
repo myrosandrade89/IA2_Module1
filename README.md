@@ -29,4 +29,4 @@ Después de realizar las configuraciones básicas de PySpark (librerías, sesió
 Teniendo los archivos, train.csv y test.csv, se configuró y entrenó un modelo en el archivo IA2_Module1_Model.
 De igual manera que en el proceso de ETL, se realizaron las configuraciones básicas de PySpark y GoogleColab. Se decidió utilizar como modelo el **Gadrient-boosted tree classifier**, este es un algoritmo basado en árboles (es un conjunto de árboles de decisión) que son utilizados para problemas de clasificación y regresión.
 
-Una vez entrenado y obtenido el modelo de clasificación, se realizó la predicción del archivo de prueba, este dio una presición del %.
+Una vez entrenado y obtenido el modelo de clasificación, se realizó la predicción del archivo de prueba, este dio una presición del 83.19%.
