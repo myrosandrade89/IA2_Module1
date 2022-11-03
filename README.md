@@ -37,5 +37,7 @@ En el archivo `CTR_Data_Analysis.twb` se realizó un tablero de visualización d
 <br>Se hicieron entonces análisis más sencillos: histogramas de la variable dependiente (haciendo la distinción de sus posibles resultados, _True_ o _False_) contra otras variables independientes (con pocas categorías para que se pudiera apreciar), además también se incluyó un _slider_ para poder manejar las horas (tiempo) y ver la variabilidad de la variable dependiente contra las independiente.
 
 En la visualización creada podemos identificar que en la categoría _07d7df22_ se tiene el mayor número de clicks (1) independiente de la hora.
-<br>
+<br>![image](https://user-images.githubusercontent.com/67491368/199836336-30bed0e8-ce50-4227-bfee-55bbf9b29083.png)
+
 <br>De igual manera podemos encontrar relativamente poca variabilidad en el comportamiento de las variables independientes contra la dependiente en cualquier momento del día, normalemente esta variabilidad es de aproximádamente 1 millón de clicks (cuando click = 1) y 2 millones de clicks (cuando click = 0). El slider también nos permite observar que al paso de los días (recordemos que se tienen 10 días de datos), el número de clicks disminuye, por ejemplo: en la hora 14102100 [`YYMMDDHH`] y en la hora 14102200 podemos ver que en casi todas las variables disminuye el número de clicks (click = 1 y click = 0).
+<br>![image](https://user-images.githubusercontent.com/67491368/199836484-790b16dc-0b58-43bc-8c9a-37cb8dc9497c.png)
