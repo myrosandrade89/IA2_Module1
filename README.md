@@ -34,10 +34,13 @@ Una vez entrenado y obtenido el modelo de clasificación, se realizó la predicc
 ## **Tablero de análisis | Tableau**
 
 En el archivo `CTR_Data_Analysis.twb` se realizó un tablero de visualización del conjunto de datos con la herramienta _Tableau_. Dado que todas las variables son categóricas y la mitad de las variables son anónimas, fue un poco complicado realizar un análisis profundo. En un principio se tenía planeado realizar una matriz de correlación de Pearson, pero los recursos de mi computadora portátil no fueron suficientes para llevar a cabo este procesamiento, se interrumpía el proceso.
-<br>Se hicieron entonces análisis más sencillos: histogramas de la variable dependiente (haciendo la distinción de sus posibles resultados, _True_ o _False_) contra otras variables independientes (con pocas categorías para que se pudiera apreciar), además también se incluyó un _slider_ para poder manejar las horas (tiempo) y ver la variabilidad de la variable dependiente contra las independiente.
+<br>Se hicieron entonces análisis más sencillos: histogramas de la variable dependiente (haciendo la distinción de sus posibles resultados, _True_ o _False_) contra otras variables independientes (con pocas categorías para que se pudiera apreciar) y áreas de las horas (en 10 días) contra el número de clicks; además también se incluyó un _slider_ para poder manejar las horas (tiempo) y ver la variabilidad de la variable dependiente contra las independiente, y la selección del valor de click (0 o 1).
+<br>![image](https://user-images.githubusercontent.com/67491368/199842061-98c99d6f-cccc-41f5-adbc-c16828382c3d.png)
+
 
 En la visualización creada podemos identificar que en la categoría _07d7df22_ se tiene el mayor número de clicks (1) independiente de la hora.
-<br>![image](https://user-images.githubusercontent.com/67491368/199836336-30bed0e8-ce50-4227-bfee-55bbf9b29083.png)
+<br>![image](https://user-images.githubusercontent.com/67491368/199842223-daf5779d-bbdf-418c-9c7c-0038b52608be.png))
 
-<br>De igual manera podemos encontrar relativamente poca variabilidad en el comportamiento de las variables independientes contra la dependiente en cualquier momento del día, normalemente esta variabilidad es de aproximádamente 1 millón de clicks (cuando click = 1) y 2 millones de clicks (cuando click = 0). El slider también nos permite observar que al paso de los días (recordemos que se tienen 10 días de datos), el número de clicks disminuye, por ejemplo: en la hora 14102100 [`YYMMDDHH`] y en la hora 14102200 podemos ver que en casi todas las variables disminuye el número de clicks (click = 1 y click = 0).
-<br>![image](https://user-images.githubusercontent.com/67491368/199836484-790b16dc-0b58-43bc-8c9a-37cb8dc9497c.png)
+<br>En la visualización del área, podemos notar un claro patrón: primero recordemos que la variable `hora`está en el formato `YYMMDDHH`, identificado las fechas de cada pico (tanto cuando $click = 1$ y $click = 0$) estas son diarias en las primeras horas del día (las personas se encuentran más expuestas en las madrugadas casi todos los días). De hecho, también podemos notar que hay una disminución notoria en $hour = 14102420$, ese día (24 de octubre del 2014) es un viernes y tiene sentido porque es cuando empieza el fin de semana.
+<br>![image](https://user-images.githubusercontent.com/67491368/199843932-78529aa4-4fff-4bae-ae95-6cec338392c1.png)
+
