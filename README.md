@@ -30,3 +30,8 @@ Teniendo los archivos, train.csv y test.csv, se configuró y entrenó un modelo 
 De igual manera que en el proceso de ETL, se realizaron las configuraciones básicas de PySpark y GoogleColab. Se decidió utilizar como modelo el **Gadrient-boosted tree classifier**, este es un algoritmo basado en árboles (es un conjunto de árboles de decisión) que son utilizados para problemas de clasificación y regresión.
 
 Una vez entrenado y obtenido el modelo de clasificación, se realizó la predicción del archivo de prueba, este dio una presición del 83.19%.
+
+## **Tablero de análisis | Tableau**
+
+En el archivo `CTR_Data_Analysis.twb` se realizó un tablero de visualización del conjunto de datos con la herramienta _Tableau_. Dado que todas las variables son categóricas y la mitad de las variables son anónimas, fue un poco complicado realizar un análisis profundo. En un principio se tenía planeado realizar una matriz de correlación de Pearson, pero los recursos de mi computadora portátil no fueron suficientes para llevar a cabo este procesamiento, se interrumpía el proceso.
+<br>Se hicieron entonces análisis más sencillos: histogramas de la variable dependiente (haciendo la distinción de sus posibles resultados, _True_ o _False_) contra otras variables independientes (con pocas categorías para que se pudiera apreciar), además también se incluyó un _slider_ para poder manejar las horas (tiempo) y ver la variabilidad de la variable dependiente contra las independiente.
