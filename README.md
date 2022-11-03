@@ -39,7 +39,7 @@ En el archivo `CTR_Data_Analysis.twb` se realizó un tablero de visualización d
 
 
 En la visualización creada podemos identificar que en la categoría _07d7df22_ se tiene el mayor número de clicks (1) independiente de la hora.
-<br>![image](https://user-images.githubusercontent.com/67491368/199842223-daf5779d-bbdf-418c-9c7c-0038b52608be.png))
+<br>![image](https://user-images.githubusercontent.com/67491368/199842223-daf5779d-bbdf-418c-9c7c-0038b52608be.png)
 
 <br>En la visualización del área, podemos notar un claro patrón: primero recordemos que la variable `hora`está en el formato `YYMMDDHH`, identificado las fechas de cada pico (tanto cuando $click = 1$ y $click = 0$) estas son diarias en las primeras horas del día (las personas se encuentran más expuestas en las madrugadas casi todos los días). De hecho, también podemos notar que hay una disminución notoria en $hour = 14102420$, ese día (24 de octubre del 2014) es un viernes y tiene sentido porque es cuando empieza el fin de semana.
 <br>![image](https://user-images.githubusercontent.com/67491368/199843932-78529aa4-4fff-4bae-ae95-6cec338392c1.png)
